@@ -1,0 +1,134 @@
+:root {
+  box-sizing: border-box;
+}
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+body {
+  background: #f7ebf9;
+  font-family: "DM sans", sans-serif;
+  background-repeat: no-repeat;
+  max-width: 1200px;
+  margin-inline: auto;
+  padding: 1rem 0.8rem;
+}
+img {
+  max-width: 100%;
+}
+a {
+  text-decoration: none;
+}
+svg {
+  vertical-align: middle;
+}
+p {
+  font-weight: 500;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 3rem;
+}
+.back-link {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.65em 1em;
+  border-radius: 6px;
+  border: 1px solid lightslategray;
+  vertical-align: middle;
+}
+.back-text {
+  font-size: 1.125rem;
+  font-weight: 700;
+  margin-left: 1rem;
+  display: none;
+}
+@media (min-width: 768px) {
+  body {
+    padding: 1em 1.5em;
+  }
+  .back-text {
+    display: inline-block;
+  }
+}
+.account {
+  display: grid;
+  gap: 2rem 5rem;
+}
+.account__header {
+  font-size: 2rem;
+}
+.text > span {
+  float: left;
+  margin-right: 0.5rem;
+}
+.text > p {
+  overflow: hidden;
+}
+.form-account {
+  padding: 1.2em 2em;
+  background-color: #fff;
+  border-radius: 10px;
+}
+.form-group {
+  margin-bottom: 1.5rem;
+}
+.form-group label {
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  display: inline-block;
+}
+.form-group input {
+  border: 1.5px solid #cac9c9;
+  border-radius: 6px;
+  padding: 1em 1.5em;
+  color: #8d8c8d;
+  width: 100%;
+  font-size: 1rem;
+  font-weight: 500;
+  outline: 0;
+  font-family: "DM sans", sans-serif;
+}
+.terms input {
+  float: left;
+  margin-right: 0.5rem;
+}
+.terms p {
+  overflow: hidden;
+}
+.terms-link {
+  color: #664efc;
+  font-weight: bold;
+  display: inline-block;
+  border-bottom: 3px solid #664efc;
+}
+.form-btn {
+  padding: 1em 1.5em;
+  width: 100%;
+  border: 0;
+  border-radius: 8px;
+  outline: 0;
+  font-weight: 700;
+  background-color: #664efc;
+  color: #fff;
+  font-family: "Dm sans", sans-serif;
+  font-size: 1rem;
+  margin-top: 1rem;
+}
+@media (min-width: 780px) {
+  .account__header {
+    font-size: 2.8rem;
+  }
+  .text > p {
+    font-size: 1.125rem;
+  }
+}
+@media (min-width: 930px) {
+  .account {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
